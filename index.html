@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixitup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    body{
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    img{
+      max-width: 200px;
+      max-height: 180px;
+      background-color: beige;
+    }
+    .mix{
+      height: 200px;
+      width: 32.5%;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="btns text-center my-5">
+
+    <div class="mix-btns">
+      <button type="button" class="btn bg-primary" data-filter="all">All</button>
+      <button type="button" class="btn bg-primary" data-filter=".flowers">Flowers</button>
+      <button type="button" class="btn bg-primary" data-filter=".watches">Watches</button>
+      <button type="button" class="btn bg-primary" data-filter=".cycles">Cycles</button>
+    </div> <br><br>
+  
+
+
+
+  
+  
+    <div class="item-box">
+  
+      
+        <div class="mix flowers"><img src="images/f-1.avif" alt=""></div>
+      
+     
+        <div class="mix watches"><img src="images/w-3.avif" alt=""></div>  
+
+      
+        <div class="mix cycles"><img src="images/c-3.avif" alt=""></div>  
+         
+     
+        <div class="mix watches"><img src="images/w-3.avif" alt=""></div>  
+    
+
+        <div class="mix cycles"><img src="images/c-3.avif" alt=""></div>  
+
+
+        <div class="mix flowers"><img src="images/f-1.avif" alt=""></div>
+         
+        <div class="mix flowers"><img src="images/f-1.avif" alt=""></div>
+      
+     
+        <div class="mix watches"><img src="images/w-3.avif" alt=""></div>  
+
+      
+        <div class="mix cycles"><img src="images/c-3.avif" alt=""></div>  
+         
+     
+        <div class="mix watches"><img src="images/w-3.avif" alt=""></div>  
+    
+
+        <div class="mix cycles"><img src="images/c-3.avif" alt=""></div>  
+
+
+        <div class="mix flowers"><img src="images/f-1.avif" alt=""></div>
+         
+
+    </div>
+
+  </div>
+  
+
+
+  
+<script src="mixitup.min.js"></script>
+  <script>
+    var config = document.querySelector('.item-box');
+    var mixer = mixitup(config);
+  </script>
+</body>
+</html>
